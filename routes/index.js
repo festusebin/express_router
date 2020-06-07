@@ -14,7 +14,7 @@ router.get('/items/:id', (req, res) => {
   return res.json(item);
 });
 
-router.post('/item', (req, res) => {
+router.post('/items', (req, res) => {
   items.push({
     item: req.body.item,
     id: ++id,
